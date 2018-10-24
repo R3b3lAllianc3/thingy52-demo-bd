@@ -1,0 +1,37 @@
+*.axf
+*.swp
+*.htm
+*.Inp
+*.map
+*.tra
+*.dep
+*._2i
+*.l2p
+*.__i
+*.fed
+*.crf
+*.d
+*.o
+*.lst
+*.lnp
+*.bak
+*.ini
+*.iex
+*.sct
+*.uvgui.*
+*.uvguix.*
+*.tmp
+**/arm/JLinkLog.txt
+**/_viminfo
+**/_vimtags
+_build/
+RTE/
+/*original
+*.pdf
+*.ind
+*.elf
+*.emSession
+*.jlink
+*.hex
+direct_test_mode/pca10056/blank/ses/flash_placement - modded.xml
+direct_test_mode/pca10056/blank/ses/flash_placement - original.xml
