@@ -425,7 +425,7 @@ static void start(void)
         }
         ERROR_CHECK(drv_ext_light_on(1));
         nrf_delay_ms(100);
-       ERROR_CHECK(drv_ext_light_off(1));
+        ERROR_CHECK(drv_ext_light_off(1));
  
     }
     const uint8_t *p_uuid = nrf_mesh_configure_device_uuid_get();
