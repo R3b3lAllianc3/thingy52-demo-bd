@@ -58,6 +58,9 @@
 /** Number of On-Off client models on the Switch Node */
 #define CLIENT_MODEL_INSTANCE_COUNT       (4)
 
+/** Number of On-Off server models on the Switch Node */
+#define SERVER_MODEL_INSTANCE_COUNT       (2)
+
 /** Number of group address being used in this example */
 #define GROUP_ADDR_COUNT (2)
 
@@ -70,7 +73,6 @@
 /** UUID prefix for other nodes */
 #define SERVER_NODE_UUID_PREFIX      {0x00, 0x59, 0xFF, 0xFF}
 #define SERVER_NODE_UUID_PREFIX_SIZE (4)
-
 
 
 /** @} end of Common definitions for the Light switch example */

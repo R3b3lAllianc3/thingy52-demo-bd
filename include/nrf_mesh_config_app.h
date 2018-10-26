@@ -82,7 +82,7 @@
  * @note This value has to be greater than two to fit the configuration and health models,
  * plus the number of models needed by the application.
  */
-#define ACCESS_MODEL_COUNT (4)
+#define ACCESS_MODEL_COUNT (5)
 
 /**
  * The number of elements in the application.
@@ -90,7 +90,7 @@
  * @warning If the application is to support multiple _instances_ of the _same_ model, they cannot
  * belong in the same element and a separate element is needed for the new instance.
  */
-#define ACCESS_ELEMENT_COUNT (2)
+#define ACCESS_ELEMENT_COUNT (3)
 
 /**
  * The number of allocated subscription lists for the application.
@@ -98,7 +98,8 @@
  * @note The application should set this number to @ref ACCESS_MODEL_COUNT minus the number of
  * models operating on shared states.
  */
-#define ACCESS_SUBSCRIPTION_LIST_COUNT (2)
+ //TODO: verify if this is appropriate
+#define ACCESS_SUBSCRIPTION_LIST_COUNT (5)
 
 /**
  * The number of pages of flash storage reserved for the access layer for persistent data storage.

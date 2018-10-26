@@ -102,7 +102,7 @@ NRF_SDH_SOC_OBSERVER(mesh_observer, NRF_SDH_BLE_STACK_OBSERVER_PRIO, on_sd_evt, 
 #define LED_BLINK_CNT_RESET      (3)
 #define LED_BLINK_CNT_PROV       (4)
 
-static generic_on_off_server_t m_server;
+static generic_on_off_server_t m_server[SERVER_MODEL_INSTANCE_COUNT];
 static generic_on_off_client_t m_client;
 static bool                   m_device_provisioned;
 static bool m_led_flag= 0;
@@ -303,15 +303,22 @@ static void client_publish_timeout_cb(access_model_handle_t handle, void * p_sel
 
 static void models_init_cb(void)
 {
+    uint32_t i;
+
     __LOG(LOG_SRC_APP, LOG_LEVEL_INFO, "Initializing and adding models\n");
-    m_server.get_cb = on_off_server_get_cb;
-    m_server.set_cb = on_off_server_set_cb;
-    ERROR_CHECK(generic_on_off_server_init(&m_server, 0));
-    ERROR_CHECK(access_model_subscription_list_alloc(m_server.model_handle));
+    for (i = 0; i < SERVER_MODEL_INSTANCE_COUNT; ++i)
+    {
+      m_server[i].get_cb = on_off_server_get_cb;
+      m_server[i].set_cb = on_off_server_set_cb;
+      //Initialize server instances on different elements since 
+      //cannot have two same instances on one element.
+      ERROR_CHECK(generic_on_off_server_init(&m_server[i], i));
+      ERROR_CHECK(access_model_subscription_list_alloc(m_server[i].model_handle));
+    }
     //Initialize client on model 1
     m_client.status_cb = client_status_cb;
     m_client.timeout_cb = client_publish_timeout_cb;
-    ERROR_CHECK(generic_on_off_client_init(&m_client, 1));
+    ERROR_CHECK(generic_on_off_client_init(&m_client, i));
     ERROR_CHECK(access_model_subscription_list_alloc(m_client.model_handle));
 
 }
