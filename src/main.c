@@ -216,19 +216,18 @@ static bool client_publication_configured(void)
     dsm_handle_t pub_addr_handle;
   
     for (uint8_t i = 0; i < CLIENT_MODEL_INSTANCE_COUNT; ++i)
-    {
-        __LOG(LOG_SRC_APP, LOG_LEVEL_INFO, "i = %u\n", i);
+    {        
         if (access_model_publish_address_get(m_client[i].model_handle, &pub_addr_handle) == NRF_SUCCESS)
         {
             if (pub_addr_handle == DSM_HANDLE_INVALID)
             {
-                __LOG(LOG_SRC_APP, LOG_LEVEL_INFO, "i = %u, false1\n", i);
+                //__LOG(LOG_SRC_APP, LOG_LEVEL_INFO, "i = %u, false1\n", i);
                 return false;
             }
         }
         else
         {
-            __LOG(LOG_SRC_APP, LOG_LEVEL_INFO, "i = %u, false2\n", i);
+            //__LOG(LOG_SRC_APP, LOG_LEVEL_INFO, "i = %u, false2\n", i);
             return false;
         }
     }
