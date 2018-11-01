@@ -103,7 +103,8 @@ NRF_SDH_SOC_OBSERVER(mesh_observer, NRF_SDH_BLE_STACK_OBSERVER_PRIO, on_sd_evt, 
 #define LED_BLINK_CNT_PROV       (4)
 
 static generic_on_off_server_t m_server[SERVER_MODEL_INSTANCE_COUNT];
-static generic_on_off_client_t m_client;
+static generic_on_off_client_t m_client[CLIENT_MODEL_INSTANCE_COUNT];
+
 static bool                   m_device_provisioned;
 static bool m_led_flag= 0;
 static bool m_on_off_button_flag= 0;
@@ -214,19 +215,25 @@ static bool client_publication_configured(void)
 {
     dsm_handle_t pub_addr_handle;
   
-        if (access_model_publish_address_get(m_client.model_handle, &pub_addr_handle) == NRF_SUCCESS)
+    for (uint8_t i = 0; i < CLIENT_MODEL_INSTANCE_COUNT; ++i)
+    {
+        __LOG(LOG_SRC_APP, LOG_LEVEL_INFO, "i = %u\n", i);
+        if (access_model_publish_address_get(m_client[i].model_handle, &pub_addr_handle) == NRF_SUCCESS)
         {
             if (pub_addr_handle == DSM_HANDLE_INVALID)
             {
+                __LOG(LOG_SRC_APP, LOG_LEVEL_INFO, "i = %u, false1\n", i);
                 return false;
             }
         }
         else
         {
+            __LOG(LOG_SRC_APP, LOG_LEVEL_INFO, "i = %u, false2\n", i);
             return false;
         }
+    }
     
-
+    __LOG(LOG_SRC_APP, LOG_LEVEL_INFO, "true\n");
     return true;
 }
 static void button_event_handler(uint32_t button_number)
@@ -243,7 +250,7 @@ static void button_event_handler(uint32_t button_number)
                
                /* send a group message to the ODD group, with flip the current button flag value */
                 m_on_off_button_flag=!m_on_off_button_flag; 
-                status = generic_on_off_client_set_unreliable(&m_client,
+                status = generic_on_off_client_set_unreliable(&m_client[button_number],
                                                              m_on_off_button_flag,
                                                             GROUP_MSG_REPEAT_COUNT);
                                                          
@@ -315,12 +322,14 @@ static void models_init_cb(void)
       ERROR_CHECK(generic_on_off_server_init(&m_server[i], i));
       ERROR_CHECK(access_model_subscription_list_alloc(m_server[i].model_handle));
     }
-    //Initialize client on model 1
-    m_client.status_cb = client_status_cb;
-    m_client.timeout_cb = client_publish_timeout_cb;
-    ERROR_CHECK(generic_on_off_client_init(&m_client, i));
-    ERROR_CHECK(access_model_subscription_list_alloc(m_client.model_handle));
+    for (i = 0; i < CLIENT_MODEL_INSTANCE_COUNT; ++i)
+    {
+      m_client[i].status_cb = client_status_cb;
+      m_client[i].timeout_cb = client_publish_timeout_cb;
 
+      ERROR_CHECK(generic_on_off_client_init(&m_client[i], i));
+      ERROR_CHECK(access_model_subscription_list_alloc(m_client[i].model_handle));
+    }
 }
 
 static void mesh_init(void)

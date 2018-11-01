@@ -56,7 +56,7 @@
 #define CLIENT_NODE_COUNT (1)
 
 /** Number of On-Off client models on the Switch Node */
-#define CLIENT_MODEL_INSTANCE_COUNT       (4)
+#define CLIENT_MODEL_INSTANCE_COUNT       (2)
 
 /** Number of On-Off server models on the Switch Node */
 #define SERVER_MODEL_INSTANCE_COUNT       (2)
