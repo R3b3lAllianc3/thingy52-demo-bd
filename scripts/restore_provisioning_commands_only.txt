@@ -1,0 +1,30 @@
+In [1]: import restoring_commands
+
+In [3]: db = MeshDB("database/example_database.json")
+
+In [5]: db.load()
+
+In [6]: restoring_commands.database_restore(db, device)
+
+In [7]: restoring_commands.provisioned_device_data_restore(db, device)
+
+In [8]: device.send(cmd.AddrPublicationAdd(address=0xC001))
+
+In [9]: gc_Group = GenericOnOffClient()
+
+In [10]: device.model_add(gc_Group)
+
+In [11]: gc_Group.publish_set(0, 6)
+
+In [12]: gc_Group.set(True)
+
+In [13]: gc_Group.publish_set(1, 6)
+
+In [14]: gc_Group.set(True)
+
+In [15]: gc_Group.set(False)
+
+In [16]: gc_Group.publish_set(0, 6)
+
+In [17]: gc_Group.set(False)
+
