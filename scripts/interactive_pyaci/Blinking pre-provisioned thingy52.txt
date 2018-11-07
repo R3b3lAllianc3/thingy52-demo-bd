@@ -1,0 +1,56 @@
+C:\nordic_local\Mesh-nrf52840\nrf5_SDK_for_Mesh_v2.2.0_src\scripts\interactive_pyaci>python37 interactive_pyaci.py -d COM18
+
+    To control your device, use d[x], where x is the device index.
+    Devices are indexed based on the order of the COM ports specified by the -d option.
+    The first device, d[0], can also be accessed using device.
+
+    Type d[x]. and hit tab to see the available methods.
+
+Python 3.7.1 (v3.7.1:260ec2c36a, Oct 20 2018, 14:57:15) [MSC v.1915 64 bit (AMD64)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 7.0.1 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: db = MeshDB("database/example_database.json")
+
+In [2]: db.provisioners
+Out[2]: [{'name': 'BT Mesh Provisioner', 'UUID': _UUID(b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'), 'allocated_unicast_range': [{'low_address': 0010, 'high_address': 7fff}], 'allocated_group_range': [{'low_address': c000, 'high_address': feff}]}]
+
+In [3]: db.load()
+
+<..snip..>
+
+In [5]: device.send(cmd.AddrPublicationAdd(db.nodes[0].unicast_address))
+
+In [6]: 2018-10-29 16:55:06,504 - INFO - COM18: AddrPublicationAdd: {'address_handle': 0}
+In [6]:
+
+<..snip..>
+
+In [10]: gc = GenericOnOffClient()
+
+In [11]: device.model_add(gc)
+
+In [12]: gc.publish_set(0, 0)
+
+In [13]: gc.set(True)
+
+In [14]: 2018-10-29 17:04:26,049 - INFO - COM18: Success
+2018-10-29 17:04:26,073 - INFO - COM18.GenericOnOffClient: Present OnOff: on
+In [14]:
+
+In [14]: gc.set(False)
+
+In [15]: 2018-10-29 17:04:41,648 - INFO - COM18: Success
+2018-10-29 17:04:41,695 - INFO - COM18.GenericOnOffClient: off
+In [15]: gc.set(True)
+
+2018-10-29 17:04:43,903 - INFO - COM18: Success
+In [16]: 2018-10-29 17:04:43,925 - INFO - COM18.GenericOnOffClient: Present OnOff: on
+In [16]: gc.set(False)
+
+In [17]: 2018-10-29 17:04:57,347 - INFO - COM18: Success
+2018-10-29 17:04:57,385 - INFO - COM18.GenericOnOffClient: off
+In [17]: gc.set(True)
+
+2018-10-29 17:04:58,918 - INFO - COM18: Success
+In [18]: 2018-10-29 17:04:58,939 - INFO - COM18.GenericOnOffClient: Present OnOff: on
