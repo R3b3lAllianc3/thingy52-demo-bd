@@ -1,0 +1,103 @@
+
+In [1]:
+
+In [1]: import restoring_commands
+   ...: db = MeshDB("database/example_database.json")
+   ...: db.load()
+   ...: restoring_commands.database_restore(db, device)
+   ...: restoring_commands.provisioned_device_data_restore(db, device)
+   ...: device.send(cmd.AddrPublicationAdd(address=0xC001))
+
+In [2]: 2018-11-07 23:54:48,552 - INFO - COM18: Success
+2018-11-07 23:54:48,560 - INFO - COM18: SubnetAdd: {'subnet_handle': 0}
+2018-11-07 23:54:48,564 - INFO - COM18: AppkeyAdd: {'appkey_handle': 0}
+2018-11-07 23:54:48,570 - INFO - COM18: AppkeyAdd: {'appkey_handle': 1}
+2018-11-07 23:54:48,575 - INFO - COM18: DevkeyAdd: {'devkey_handle': 8}
+2018-11-07 23:54:48,581 - INFO - COM18: AddrPublicationAdd: {'address_handle': 0}
+2018-11-07 23:54:48,586 - INFO - COM18: DevkeyAdd: {'devkey_handle': 9}
+2018-11-07 23:54:48,596 - INFO - COM18: AddrPublicationAdd: {'address_handle': 1}
+2018-11-07 23:54:48,602 - INFO - COM18: DevkeyAdd: {'devkey_handle': 10}
+2018-11-07 23:54:48,609 - INFO - COM18: AddrPublicationAdd: {'address_handle': 2}
+2018-11-07 23:54:48,622 - INFO - COM18: DevkeyAdd: {'devkey_handle': 11}
+2018-11-07 23:54:48,626 - INFO - COM18: AddrPublicationAdd: {'address_handle': 3}
+2018-11-07 23:54:48,636 - INFO - COM18: DevkeyAdd: {'devkey_handle': 12}
+2018-11-07 23:54:48,641 - INFO - COM18: AddrPublicationAdd: {'address_handle': 4}
+2018-11-07 23:54:48,652 - INFO - COM18: DevkeyAdd: {'devkey_handle': 13}
+2018-11-07 23:54:48,655 - INFO - COM18: AddrPublicationAdd: {'address_handle': 5}
+2018-11-07 23:54:48,665 - INFO - COM18: DevkeyAdd: {'devkey_handle': 14}
+2018-11-07 23:54:48,668 - INFO - COM18: AddrPublicationAdd: {'address_handle': 6}
+2018-11-07 23:54:48,678 - INFO - COM18: DevkeyAdd: {'devkey_handle': 15}
+2018-11-07 23:54:48,683 - INFO - COM18: AddrPublicationAdd: {'address_handle': 7}
+2018-11-07 23:54:48,691 - INFO - COM18: DevkeyAdd: {'devkey_handle': 16}
+2018-11-07 23:54:48,703 - INFO - COM18: AddrPublicationAdd: {'address_handle': 8}
+2018-11-07 23:54:48,708 - INFO - COM18: DevkeyAdd: {'devkey_handle': 17}
+2018-11-07 23:54:48,715 - INFO - COM18: AddrPublicationAdd: {'address_handle': 9}
+2018-11-07 23:54:48,721 - INFO - COM18: DevkeyAdd: {'devkey_handle': 18}
+2018-11-07 23:54:48,728 - INFO - COM18: AddrPublicationAdd: {'address_handle': 10}
+2018-11-07 23:54:48,733 - INFO - COM18: DevkeyAdd: {'devkey_handle': 19}
+2018-11-07 23:54:48,741 - INFO - COM18: AddrPublicationAdd: {'address_handle': 11}
+2018-11-07 23:54:48,753 - INFO - COM18: DevkeyAdd: {'devkey_handle': 20}
+2018-11-07 23:54:48,758 - INFO - COM18: AddrPublicationAdd: {'address_handle': 12}
+2018-11-07 23:54:48,766 - INFO - COM18: DevkeyAdd: {'devkey_handle': 21}
+2018-11-07 23:54:48,771 - INFO - COM18: AddrPublicationAdd: {'address_handle': 13}
+2018-11-07 23:54:48,779 - INFO - COM18: DevkeyAdd: {'devkey_handle': 22}
+2018-11-07 23:54:48,783 - INFO - COM18: AddrPublicationAdd: {'address_handle': 14}
+2018-11-07 23:54:48,792 - INFO - COM18: DevkeyAdd: {'devkey_handle': 23}
+2018-11-07 23:54:48,803 - INFO - COM18: AddrPublicationAdd: {'address_handle': 15}
+2018-11-07 23:54:48,808 - INFO - COM18: DevkeyAdd: {'devkey_handle': 24}
+2018-11-07 23:54:48,817 - INFO - COM18: AddrPublicationAdd: {'address_handle': 16}
+2018-11-07 23:54:48,822 - INFO - COM18: DevkeyAdd: {'devkey_handle': 25}
+2018-11-07 23:54:48,831 - INFO - COM18: AddrPublicationAdd: {'address_handle': 17}
+2018-11-07 23:54:48,835 - INFO - COM18: DevkeyAdd: {'devkey_handle': 26}
+2018-11-07 23:54:48,844 - INFO - COM18: AddrPublicationAdd: {'address_handle': 18}
+2018-11-07 23:54:48,849 - INFO - COM18: DevkeyAdd: {'devkey_handle': 27}
+2018-11-07 23:54:48,855 - INFO - COM18: AddrPublicationAdd: {'address_handle': 19}
+2018-11-07 23:54:48,860 - INFO - COM18: DevkeyAdd: {'devkey_handle': 28}
+2018-11-07 23:54:48,869 - INFO - COM18: AddrPublicationAdd: {'address_handle': 20}
+2018-11-07 23:54:48,875 - INFO - COM18: DevkeyAdd: {'devkey_handle': 29}
+2018-11-07 23:54:48,883 - INFO - COM18: AddrPublicationAdd: {'address_handle': 21}
+2018-11-07 23:54:48,888 - INFO - COM18: DevkeyAdd: {'devkey_handle': 30}
+2018-11-07 23:54:48,896 - INFO - COM18: AddrPublicationAdd: {'address_handle': 22}
+2018-11-07 23:54:48,902 - INFO - COM18: DevkeyAdd: {'devkey_handle': 31}
+2018-11-07 23:54:48,911 - INFO - COM18: AddrPublicationAdd: {'address_handle': 23}
+2018-11-07 23:54:48,920 - INFO - COM18: DevkeyAdd: {'devkey_handle': 32}
+2018-11-07 23:54:48,924 - INFO - COM18: AddrPublicationAdd: {'address_handle': 24}
+2018-11-07 23:54:48,934 - INFO - COM18: DevkeyAdd: {'devkey_handle': 33}
+2018-11-07 23:54:48,936 - INFO - COM18: AddrPublicationAdd: {'address_handle': 25}
+2018-11-07 23:54:48,947 - INFO - COM18: DevkeyAdd: {'devkey_handle': 34}
+2018-11-07 23:54:48,950 - INFO - COM18: AddrPublicationAdd: {'address_handle': 26}
+2018-11-07 23:54:48,960 - INFO - COM18: DevkeyAdd: {'devkey_handle': 35}
+2018-11-07 23:54:48,970 - INFO - COM18: AddrPublicationAdd: {'address_handle': 27}
+2018-11-07 23:54:48,976 - INFO - COM18: DevkeyAdd: {'devkey_handle': 36}
+2018-11-07 23:54:48,984 - INFO - COM18: AddrPublicationAdd: {'address_handle': 28}
+2018-11-07 23:54:48,991 - INFO - COM18: DevkeyAdd: {'devkey_handle': 37}
+2018-11-07 23:54:49,000 - INFO - COM18: AddrPublicationAdd: {'address_handle': 29}
+2018-11-07 23:54:49,004 - INFO - COM18: AddrPublicationAdd: {'address_handle': 30}
+In [2]:
+
+In [2]:
+
+In [2]:
+
+In [2]:
+
+In [2]: device.send(cmd.AddrPublicationAdd(address=0xC001))
+
+2018-11-07 23:55:18,916 - INFO - COM18: AddrPublicationAdd: {'address_handle': 30}
+In [3]:
+
+In [3]:
+
+In [3]: gc_Group = GenericOnOffClient()
+   ...: device.model_add(gc_Group)
+   ...: gc_Group.publish_set(0, 30)
+
+In [4]:
+
+In [4]: gc_Group.set(True)
+
+In [5]: 2018-11-07 23:56:23,731 - INFO - COM18: Success
+In [5]:
+
+In [5]: device.send(cmd.AddrPublicationAdd(address=0xC001))
+

@@ -1,0 +1,131 @@
+For sending 20 messages, I get this:
+
+<t:     488405>, transport.c, 1189, TX:SAR packet: 82020107160657A5
+<t:     489784>, net_packet.c,  230, Unencrypted data: : 00015F7A1EB09F40A701
+<t:     489791>, transport.c,  932, Message decrypted
+<t:     518745>, net_packet.c,  230, Unencrypted data: : 000100003400000001
+<t:     537618>, transport.c, 1189, TX:SAR packet: 820201088CC40E12
+<t:     538881>, net_packet.c,  230, Unencrypted data: : 000100003C00000001
+<t:     539618>, net_packet.c,  230, Unencrypted data: : 00015F9D583D1A33B959
+<t:     539625>, transport.c,  932, Message decrypted
+<t:     586922>, transport.c, 1189, TX:SAR packet: 82020109251A34EF
+<t:     588073>, net_packet.c,  230, Unencrypted data: : 000100004000000001
+<t:     588908>, net_packet.c,  230, Unencrypted data: : 00015F6F56FC3735CE4F
+<t:     588914>, transport.c,  932, Message decrypted
+<t:     636110>, transport.c, 1189, TX:SAR packet: 8202010AD049F0DF
+<t:     636644>, net_packet.c,  230, Unencrypted data: : 000100004400000001
+<t:     637594>, net_packet.c,  230, Unencrypted data: : 00015F3C71923BC2FAC4
+<t:     637601>, transport.c,  932, Message decrypted
+<t:     685344>, transport.c, 1189, TX:SAR packet: 8202010B26FC46CE
+<t:     686042>, net_packet.c,  230, Unencrypted data: : 000100004800000001
+<t:     686976>, net_packet.c,  230, Unencrypted data: : 00015F6994DCC8EFA805
+<t:     686982>, transport.c,  932, Message decrypted
+<t:     734661>, transport.c, 1189, TX:SAR packet: 8202010C86C000ED
+<t:     735470>, net_packet.c,  230, Unencrypted data: : 000100004C00000001
+<t:     736303>, net_packet.c,  230, Unencrypted data: : 00015F9B33E8947FDD9B
+<t:     736309>, transport.c,  932, Message decrypted
+<t:     783836>, transport.c, 1189, TX:SAR packet: 8202010DCD8042BC
+<t:     784533>, net_packet.c,  230, Unencrypted data: : 000100005000000001
+<t:     785304>, net_packet.c,  230, Unencrypted data: : 00015F7BCB334BFA8B94
+<t:     785311>, transport.c,  932, Message decrypted
+<t:     833041>, transport.c, 1189, TX:SAR packet: 8202010E5988250C
+<t:     834071>, net_packet.c,  230, Unencrypted data: : 000100005400000001
+<t:     834951>, net_packet.c,  230, Unencrypted data: : 00015F64ECBE8D70E18B
+<t:     834958>, transport.c,  932, Message decrypted
+<t:     882342>, transport.c, 1189, TX:SAR packet: 8202010F976F9FF3
+<t:     883169>, net_packet.c,  230, Unencrypted data: : 000100005800000001
+<t:     884033>, net_packet.c,  230, Unencrypted data: : 00015FFE192DF4B9BB3F
+<t:     884040>, transport.c,  932, Message decrypted
+<t:     931654>, transport.c, 1189, TX:SAR packet: 820201105898948F
+<t:     932377>, net_packet.c,  230, Unencrypted data: : 000100005C00000001
+<t:     933164>, net_packet.c,  230, Unencrypted data: : 00015F472B07663A2A4D
+<t:     933170>, transport.c,  932, Message decrypted
+<t:     980774>, transport.c, 1189, TX:SAR packet: 82020111F8968D37
+<t:     981497>, net_packet.c,  230, Unencrypted data: : 000100006000000001
+<t:     982291>, net_packet.c,  230, Unencrypted data: : 00015F374B6C152E8681
+<t:     982297>, transport.c,  932, Message decrypted
+<t:    1030040>, transport.c, 1189, TX:SAR packet: 820201121F3B7BB1
+<t:    1030628>, net_packet.c,  230, Unencrypted data: : 000100006400000001
+<t:    1031514>, net_packet.c,  230, Unencrypted data: : 00015FE02F64E6B4432D
+<t:    1031520>, transport.c,  932, Message decrypted
+<t:    1079270>, transport.c, 1189, TX:SAR packet: 820201138FADE130
+<t:    1079704>, net_packet.c,  230, Unencrypted data: : 000100006800000001
+<t:    1080670>, net_packet.c,  230, Unencrypted data: : 00015FA4FAF51063D0E1
+<t:    1080677>, transport.c,  932, Message decrypted
+<t:    1128534>, transport.c, 1189, TX:SAR packet: 8202011410DC6A73
+<t:    1129001>, net_packet.c,  230, Unencrypted data: : 000100006C00000001
+<t:    1129972>, net_packet.c,  230, Unencrypted data: : 00015FB2330F91670232
+<t:    1129979>, transport.c,  932, Message decrypted
+<t:    1177806>, transport.c, 1189, TX:SAR packet: 8202011555DA5EC5
+<t:    1179014>, net_packet.c,  230, Unencrypted data: : 000100007000000001
+<t:    1179783>, net_packet.c,  230, Unencrypted data: : 00015F752826BA7AF181
+<t:    1179789>, transport.c,  932, Message decrypted
+<t:    1227037>, transport.c, 1189, TX:SAR packet: 8202011630FED5F2
+<t:    1228302>, net_packet.c,  230, Unencrypted data: : 000100007400000001
+<t:    1229231>, net_packet.c,  230, Unencrypted data: : 00015FB5C4CC8D1D3CDD
+<t:    1229238>, transport.c,  932, Message decrypted
+<t:    1276243>, transport.c, 1189, TX:SAR packet: 82020117DD45DC89
+<t:    1277101>, net_packet.c,  230, Unencrypted data: : 000100007800000001
+<t:    1277856>, net_packet.c,  230, Unencrypted data: : 00015FF3EE97782276D2
+<t:    1277862>, transport.c,  932, Message decrypted
+<t:    1325525>, transport.c, 1189, TX:SAR packet: 820201187F7F7912
+<t:    1326991>, net_packet.c,  230, Unencrypted data: : 000100007C00000001
+<t:    1327649>, net_packet.c,  230, Unencrypted data: : 00015F1C19AB663DFC91
+<t:    1327655>, transport.c,  932, Message decrypted
+<t:    1374774>, transport.c, 1189, TX:SAR packet: 82020119DDECD190
+<t:    1375375>, net_packet.c,  230, Unencrypted data: : 000100008000000001
+<t:    1376078>, net_packet.c,  230, Unencrypted data: : 00015F26695CA1BAE70D
+<t:    1376085>, transport.c,  932, Message decrypted
+<t:    1423984>, transport.c, 1189, TX:SAR packet: 8202011AE2987D62
+<t:    1425241>, net_packet.c,  230, Unencrypted data: : 000100008400000001
+<t:    1426004>, net_packet.c,  230, Unencrypted data: : 00015F7D810AC892F953
+<t:    1426011>, transport.c,  932, Message decrypted
+
+I'm defining a function for transforming ticks in RTC1 to milliseconds:
+ticks_to_ms = lambda a, b: abs(a-b) * 1000000 / 32768 / 1000
+
+The default for RTC0 (used in mesh 2.2) should be milliseconds, no no conversion should be needed. 
+
+Extracting the timestamps gives
+[ticks_to_ms(489791, 488405),
+ticks_to_ms(539625, 537618),
+ticks_to_ms(588914, 586922),
+ticks_to_ms(637601, 636110),
+ticks_to_ms(686982, 685344),
+ticks_to_ms(736309, 734661),
+ticks_to_ms(785311, 783836),
+ticks_to_ms(834958, 833041),
+ticks_to_ms(884040, 882342),
+ticks_to_ms(933170, 931654),
+ticks_to_ms(982297, 980774),
+ticks_to_ms(1031520, 1030040),
+ticks_to_ms(1080677, 1079270),
+ticks_to_ms(1129979, 1128534),
+ticks_to_ms(1179789, 1177806),
+ticks_to_ms(1229238, 1227037),
+ticks_to_ms(1277862, 1276243),
+ticks_to_ms(1327655, 1325525),
+ticks_to_ms(1376085, 1374774),
+ticks_to_ms(1426011, 1423984)]
+
+[42.29736328125,
+ 61.248779296875,
+ 60.791015625,
+ 45.501708984375,
+ 49.98779296875,
+ 50.29296875,
+ 45.013427734375,
+ 58.502197265625,
+ 51.81884765625,
+ 46.2646484375,
+ 46.478271484375,
+ 45.166015625,
+ 42.938232421875,
+ 44.097900390625,
+ 60.516357421875,
+ 67.169189453125,
+ 49.407958984375,
+ 65.00244140625,
+ 40.008544921875,
+ 61.859130859375]
+ 

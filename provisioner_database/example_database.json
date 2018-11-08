@@ -41,14 +41,15 @@
   ],
   "nodes": [
     {
-      "UUID": "0059ffff000000005bd65ca0c877300f",
+      "UUID": "0059ffff000000004796a106d4871169",
       "appKeys": [
-        0
+        0,
+        1
       ],
       "cid": "0059",
       "configComplete": false,
-      "crpl": 40,
-      "deviceKey": "5d0eb2970ea53f88dc1efb3ab439d093",
+      "crpl": "0028",
+      "deviceKey": "e8f99ceb0ee4a04c0f857faa79b1f30b",
       "elements": [
         {
           "index": 0,
@@ -65,17 +66,9 @@
                 0
               ],
               "modelId": "1000",
-              "publish": {
-                "address": 49153,
-                "credentials": 0,
-                "index": 0,
-                "period": 0,
-                "retransmit": {
-                  "count": 0,
-                  "interval": 50
-                },
-                "ttl": 1
-              }
+              "subscribe": [
+                49153
+              ]
             },
             {
               "modelId": "1001"
@@ -101,7 +94,7 @@
         "proxy": 2,
         "relay": 0
       },
-      "name": "Light bulb #1",
+      "name": "Light bulb #1.0",
       "netKeys": [
         0
       ],
@@ -111,14 +104,327 @@
       "vid": "0000"
     },
     {
-      "UUID": "0059ffff00000000785fed0f67f71d13",
+      "UUID": "0059ffff00000000516196949aae981d",
       "appKeys": [
+        0,
         1
       ],
       "cid": "0059",
       "configComplete": false,
-      "crpl": 40,
-      "deviceKey": "8f9e12220e8588e6974c1c5a75839105",
+      "crpl": "0028",
+      "deviceKey": "7dca1e8fff78f6f09175f2348d48aa8d",
+      "elements": [
+        {
+          "index": 0,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "0000"
+            },
+            {
+              "modelId": "0002"
+            },
+            {
+              "bind": [
+                0
+              ],
+              "modelId": "1000",
+              "subscribe": [
+                49153
+              ]
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1000"
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        }
+      ],
+      "features": {
+        "friend": 2,
+        "lowPower": 2,
+        "proxy": 2,
+        "relay": 0
+      },
+      "name": "Light bulb #2.0",
+      "netKeys": [
+        0
+      ],
+      "pid": "0000",
+      "security": "low",
+      "unicastAddress": 19,
+      "vid": "0000"
+    },
+    {
+      "UUID": "0059ffff000000008074f1b6f2458d71",
+      "appKeys": [
+        0,
+        1
+      ],
+      "cid": "0059",
+      "configComplete": false,
+      "crpl": "0028",
+      "deviceKey": "fd0e5ffc294b636b76aaaff5b1275cef",
+      "elements": [
+        {
+          "index": 0,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "0000"
+            },
+            {
+              "modelId": "0002"
+            },
+            {
+              "bind": [
+                0
+              ],
+              "modelId": "1000"
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1000"
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        }
+      ],
+      "features": {
+        "friend": 2,
+        "lowPower": 2,
+        "proxy": 2,
+        "relay": 0
+      },
+      "name": "Light bulb #3.0",
+      "netKeys": [
+        0
+      ],
+      "pid": "0000",
+      "security": "low",
+      "unicastAddress": 22,
+      "vid": "0000"
+    },
+    {
+      "UUID": "0059ffff0000000049f7c69a8ecb8a78",
+      "appKeys": [
+        0,
+        1
+      ],
+      "cid": "0059",
+      "configComplete": false,
+      "crpl": "0028",
+      "deviceKey": "fe7090484a617c4bc51cb5c341d42185",
+      "elements": [
+        {
+          "index": 0,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "0000"
+            },
+            {
+              "modelId": "0002"
+            },
+            {
+              "bind": [
+                0
+              ],
+              "modelId": "1000",
+              "subscribe": [
+                49153
+              ]
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1000"
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        }
+      ],
+      "features": {
+        "friend": 2,
+        "lowPower": 2,
+        "proxy": 2,
+        "relay": 0
+      },
+      "name": "Light bulb #4.0",
+      "netKeys": [
+        0
+      ],
+      "pid": "0000",
+      "security": "low",
+      "unicastAddress": 25,
+      "vid": "0000"
+    },
+    {
+      "UUID": "0059ffff00000000785fed0f67f71d13",
+      "appKeys": [
+        0,
+        1
+      ],
+      "cid": "0059",
+      "configComplete": false,
+      "crpl": "0028",
+      "deviceKey": "569adc8c35c589ec2c7a5c7d926eb985",
+      "elements": [
+        {
+          "index": 0,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "0000"
+            },
+            {
+              "modelId": "0002"
+            },
+            {
+              "bind": [
+                0
+              ],
+              "modelId": "1000",
+              "subscribe": [
+                49153
+              ]
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1000"
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        }
+      ],
+      "features": {
+        "friend": 2,
+        "lowPower": 2,
+        "proxy": 2,
+        "relay": 0
+      },
+      "name": "Light bulb #5.0",
+      "netKeys": [
+        0
+      ],
+      "pid": "0000",
+      "security": "low",
+      "unicastAddress": 28,
+      "vid": "0000"
+    },
+    {
+      "UUID": "0059ffff000000005bd65ca0c877300f",
+      "appKeys": [
+        0,
+        1
+      ],
+      "cid": "0059",
+      "configComplete": false,
+      "crpl": "0028",
+      "deviceKey": "dff1d553261b4e1eac5d282b4521f53f",
+      "elements": [
+        {
+          "index": 0,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "0000"
+            },
+            {
+              "modelId": "0002"
+            },
+            {
+              "bind": [
+                0
+              ],
+              "modelId": "1000",
+              "subscribe": [
+                49153
+              ]
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1000"
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        }
+      ],
+      "features": {
+        "friend": 2,
+        "lowPower": 2,
+        "proxy": 2,
+        "relay": 0
+      },
+      "name": "Light bulb #6.0",
+      "netKeys": [
+        0
+      ],
+      "pid": "0000",
+      "security": "low",
+      "unicastAddress": 31,
+      "vid": "0000"
+    },
+    {
+      "UUID": "0059ffff000000007e938cba686f6115",
+      "appKeys": [
+        0,
+        1
+      ],
+      "cid": "0059",
+      "configComplete": false,
+      "crpl": "0028",
+      "deviceKey": "a0cb39abca1828e20aea76af8d1b74f5",
       "elements": [
         {
           "index": 0,
@@ -135,17 +441,9 @@
                 1
               ],
               "modelId": "1000",
-              "publish": {
-                "address": 49153,
-                "credentials": 0,
-                "index": 1,
-                "period": 0,
-                "retransmit": {
-                  "count": 0,
-                  "interval": 50
-                },
-                "ttl": 1
-              }
+              "subscribe": [
+                49153
+              ]
             },
             {
               "modelId": "1001"
@@ -171,13 +469,139 @@
         "proxy": 2,
         "relay": 0
       },
-      "name": "Light bulb #2",
+      "name": "Light bulb #1.1",
       "netKeys": [
         0
       ],
       "pid": "0000",
       "security": "low",
-      "unicastAddress": 19,
+      "unicastAddress": 34,
+      "vid": "0000"
+    },
+    {
+      "UUID": "0059ffff000000000f0d036331f56baf",
+      "appKeys": [
+        0,
+        1
+      ],
+      "cid": "0059",
+      "configComplete": false,
+      "crpl": "0028",
+      "deviceKey": "e3646166d66ca380a7b936b1e99dbc5e",
+      "elements": [
+        {
+          "index": 0,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "0000"
+            },
+            {
+              "modelId": "0002"
+            },
+            {
+              "bind": [
+                1
+              ],
+              "modelId": "1000",
+              "subscribe": [
+                49153
+              ]
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1000"
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        }
+      ],
+      "features": {
+        "friend": 2,
+        "lowPower": 2,
+        "proxy": 2,
+        "relay": 0
+      },
+      "name": "Light bulb #2.1",
+      "netKeys": [
+        0
+      ],
+      "pid": "0000",
+      "security": "low",
+      "unicastAddress": 37,
+      "vid": "0000"
+    },
+    {
+      "UUID": "0059ffff000000001b91b511a9c0ad0c",
+      "appKeys": [
+        0,
+        1
+      ],
+      "cid": "0059",
+      "configComplete": false,
+      "crpl": "0028",
+      "deviceKey": "a6f1142f18bbf647287abc0f480d8b3a",
+      "elements": [
+        {
+          "index": 0,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "0000"
+            },
+            {
+              "modelId": "0002"
+            },
+            {
+              "bind": [
+                1
+              ],
+              "modelId": "1000",
+              "subscribe": [
+                49153
+              ]
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1000"
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        }
+      ],
+      "features": {
+        "friend": 2,
+        "lowPower": 2,
+        "proxy": 2,
+        "relay": 0
+      },
+      "name": "Light bulb #3.1",
+      "netKeys": [
+        0
+      ],
+      "pid": "0000",
+      "security": "low",
+      "unicastAddress": 40,
       "vid": "0000"
     },
     {
@@ -188,8 +612,8 @@
       ],
       "cid": "0059",
       "configComplete": false,
-      "crpl": 40,
-      "deviceKey": "0d666cf707f01091bd1f10101fc070fd",
+      "crpl": "0028",
+      "deviceKey": "894a96a1388a1a4dfab5354f419abf02",
       "elements": [
         {
           "index": 0,
@@ -202,24 +626,16 @@
               "modelId": "0002"
             },
             {
-              "modelId": "1000"
+              "bind": [
+                1
+              ],
+              "modelId": "1000",
+              "subscribe": [
+                49153
+              ]
             },
             {
-              "bind": [
-                0
-              ],
-              "modelId": "1001",
-              "publish": {
-                "address": 16,
-                "credentials": 0,
-                "index": 0,
-                "period": 0,
-                "retransmit": {
-                  "count": 0,
-                  "interval": 50
-                },
-                "ttl": 1
-              }
+              "modelId": "1001"
             }
           ]
         },
@@ -231,21 +647,7 @@
               "modelId": "1000"
             },
             {
-              "bind": [
-                1
-              ],
-              "modelId": "1001",
-              "publish": {
-                "address": 19,
-                "credentials": 0,
-                "index": 1,
-                "period": 0,
-                "retransmit": {
-                  "count": 0,
-                  "interval": 50
-                },
-                "ttl": 1
-              }
+              "modelId": "1001"
             }
           ]
         }
@@ -256,13 +658,1266 @@
         "proxy": 2,
         "relay": 0
       },
-      "name": "Switch",
+      "name": "Light bulb #4.1",
       "netKeys": [
         0
       ],
       "pid": "0000",
       "security": "low",
-      "unicastAddress": 22,
+      "unicastAddress": 43,
+      "vid": "0000"
+    },
+    {
+      "UUID": "0059ffff0000000023b208fe2ee4c384",
+      "appKeys": [
+        0,
+        1
+      ],
+      "cid": "0059",
+      "configComplete": false,
+      "crpl": "0028",
+      "deviceKey": "01fea9b7473828d917e6ff510bd21815",
+      "elements": [
+        {
+          "index": 0,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "0000"
+            },
+            {
+              "modelId": "0002"
+            },
+            {
+              "bind": [
+                1
+              ],
+              "modelId": "1000",
+              "subscribe": [
+                49153
+              ]
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1000"
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        }
+      ],
+      "features": {
+        "friend": 2,
+        "lowPower": 2,
+        "proxy": 2,
+        "relay": 0
+      },
+      "name": "Light bulb #5.1",
+      "netKeys": [
+        0
+      ],
+      "pid": "0000",
+      "security": "low",
+      "unicastAddress": 46,
+      "vid": "0000"
+    },
+    {
+      "UUID": "0059ffff000000005ec2ecc992690d4b",
+      "appKeys": [
+        0,
+        1
+      ],
+      "cid": "0059",
+      "configComplete": false,
+      "crpl": "0028",
+      "deviceKey": "630b9e908f96cdc81260c6ea0ee87358",
+      "elements": [
+        {
+          "index": 0,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "0000"
+            },
+            {
+              "modelId": "0002"
+            },
+            {
+              "bind": [
+                1
+              ],
+              "modelId": "1000",
+              "subscribe": [
+                49153
+              ]
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1000"
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        }
+      ],
+      "features": {
+        "friend": 2,
+        "lowPower": 2,
+        "proxy": 2,
+        "relay": 0
+      },
+      "name": "Light bulb #6.1",
+      "netKeys": [
+        0
+      ],
+      "pid": "0000",
+      "security": "low",
+      "unicastAddress": 49,
+      "vid": "0000"
+    },
+    {
+      "UUID": "0059ffff000000003a8ee0e3df0df4f5",
+      "appKeys": [
+        0,
+        1
+      ],
+      "cid": "0059",
+      "configComplete": false,
+      "crpl": "0028",
+      "deviceKey": "17c89b234e07d06437ab976a4b10d131",
+      "elements": [
+        {
+          "index": 0,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "0000"
+            },
+            {
+              "modelId": "0002"
+            },
+            {
+              "bind": [
+                0
+              ],
+              "modelId": "1000",
+              "subscribe": [
+                49153
+              ]
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1000"
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        }
+      ],
+      "features": {
+        "friend": 2,
+        "lowPower": 2,
+        "proxy": 2,
+        "relay": 0
+      },
+      "name": "Light bulb #7.0",
+      "netKeys": [
+        0
+      ],
+      "pid": "0000",
+      "security": "low",
+      "unicastAddress": 51,
+      "vid": "0000"
+    },
+    {
+      "UUID": "0059ffff00000000c2f853157c42d419",
+      "appKeys": [
+        0,
+        1
+      ],
+      "cid": "0059",
+      "configComplete": false,
+      "crpl": "0028",
+      "deviceKey": "1c503a8713d7bd0d48423633c9daa3d3",
+      "elements": [
+        {
+          "index": 0,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "0000"
+            },
+            {
+              "modelId": "0002"
+            },
+            {
+              "bind": [
+                0
+              ],
+              "modelId": "1000",
+              "subscribe": [
+                49153
+              ]
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1000"
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        }
+      ],
+      "features": {
+        "friend": 2,
+        "lowPower": 2,
+        "proxy": 2,
+        "relay": 0
+      },
+      "name": "Light bulb #8.0",
+      "netKeys": [
+        0
+      ],
+      "pid": "0000",
+      "security": "low",
+      "unicastAddress": 53,
+      "vid": "0000"
+    },
+    {
+      "UUID": "0059ffff00000000928e500d4dd69262",
+      "cid": "0059",
+      "configComplete": false,
+      "crpl": "0028",
+      "deviceKey": "c4c53eee949a8139ae0aa3c57d96aa38",
+      "elements": [
+        {
+          "index": 0,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "0000"
+            },
+            {
+              "modelId": "0002"
+            },
+            {
+              "modelId": "1000",
+              "subscribe": [
+                49153
+              ]
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1000"
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        }
+      ],
+      "features": {
+        "friend": 2,
+        "lowPower": 2,
+        "proxy": 2,
+        "relay": 0
+      },
+      "name": "Light bulb #7.1",
+      "netKeys": [
+        0
+      ],
+      "pid": "0000",
+      "security": "low",
+      "unicastAddress": 55,
+      "vid": "0000"
+    },
+    {
+      "UUID": "0059ffff00000000efb158c5b1baf4bf",
+      "appKeys": [
+        0,
+        1
+      ],
+      "cid": "0059",
+      "configComplete": false,
+      "crpl": "0028",
+      "deviceKey": "4798720cd5748d267096e3122aa80648",
+      "elements": [
+        {
+          "index": 0,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "0000"
+            },
+            {
+              "modelId": "0002"
+            },
+            {
+              "bind": [
+                1
+              ],
+              "modelId": "1000",
+              "subscribe": [
+                49153
+              ]
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1000"
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        }
+      ],
+      "features": {
+        "friend": 2,
+        "lowPower": 2,
+        "proxy": 2,
+        "relay": 0
+      },
+      "name": "Light bulb #8.1",
+      "netKeys": [
+        0
+      ],
+      "pid": "0000",
+      "security": "low",
+      "unicastAddress": 58,
+      "vid": "0000"
+    },
+    {
+      "UUID": "0059ffff0000000052389acf1f6cd7e1",
+      "appKeys": [
+        0,
+        1
+      ],
+      "cid": "0059",
+      "configComplete": false,
+      "crpl": "0028",
+      "deviceKey": "ce32f0f582d1af2ad53f617e9409b513",
+      "elements": [
+        {
+          "index": 0,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "0000"
+            },
+            {
+              "modelId": "0002"
+            },
+            {
+              "bind": [
+                1
+              ],
+              "modelId": "1000",
+              "subscribe": [
+                49153
+              ]
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1000"
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        }
+      ],
+      "features": {
+        "friend": 2,
+        "lowPower": 2,
+        "proxy": 2,
+        "relay": 0
+      },
+      "name": "Light bulb #9.1",
+      "netKeys": [
+        0
+      ],
+      "pid": "0000",
+      "security": "low",
+      "unicastAddress": 60,
+      "vid": "0000"
+    },
+    {
+      "UUID": "0059ffff0000000012b07f0448092cc7",
+      "appKeys": [
+        0,
+        1
+      ],
+      "cid": "0059",
+      "configComplete": false,
+      "crpl": "0028",
+      "deviceKey": "5ffe66551f52df840178d73a0fdce175",
+      "elements": [
+        {
+          "index": 0,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "0000"
+            },
+            {
+              "modelId": "0002"
+            },
+            {
+              "bind": [
+                1
+              ],
+              "modelId": "1000",
+              "subscribe": [
+                49153
+              ]
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1000"
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        }
+      ],
+      "features": {
+        "friend": 2,
+        "lowPower": 2,
+        "proxy": 2,
+        "relay": 0
+      },
+      "name": "Light bulb #10.1",
+      "netKeys": [
+        0
+      ],
+      "pid": "0000",
+      "security": "low",
+      "unicastAddress": 63,
+      "vid": "0000"
+    },
+    {
+      "UUID": "0059ffff000000005efeb033e7d44d0d",
+      "appKeys": [
+        0,
+        1
+      ],
+      "cid": "0059",
+      "configComplete": false,
+      "crpl": "0028",
+      "deviceKey": "fa488f7e2ea32b7a377587b5affb857c",
+      "elements": [
+        {
+          "index": 0,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "0000"
+            },
+            {
+              "modelId": "0002"
+            },
+            {
+              "bind": [
+                1
+              ],
+              "modelId": "1000",
+              "subscribe": [
+                49153
+              ]
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1000"
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        }
+      ],
+      "features": {
+        "friend": 2,
+        "lowPower": 2,
+        "proxy": 2,
+        "relay": 0
+      },
+      "name": "Light bulb #11.1",
+      "netKeys": [
+        0
+      ],
+      "pid": "0000",
+      "security": "low",
+      "unicastAddress": 66,
+      "vid": "0000"
+    },
+    {
+      "UUID": "0059ffff00000000cc1c9614cc676c67",
+      "appKeys": [
+        0,
+        1
+      ],
+      "cid": "0059",
+      "configComplete": false,
+      "crpl": "0028",
+      "deviceKey": "3b9a13db7024208238cf837a443d3c95",
+      "elements": [
+        {
+          "index": 0,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "0000"
+            },
+            {
+              "modelId": "0002"
+            },
+            {
+              "bind": [
+                1
+              ],
+              "modelId": "1000",
+              "subscribe": [
+                49153
+              ]
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1000"
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        }
+      ],
+      "features": {
+        "friend": 2,
+        "lowPower": 2,
+        "proxy": 2,
+        "relay": 0
+      },
+      "name": "Light bulb #12.1",
+      "netKeys": [
+        0
+      ],
+      "pid": "0000",
+      "security": "low",
+      "unicastAddress": 69,
+      "vid": "0000"
+    },
+    {
+      "UUID": "0059ffff00000000a05068d9fba838c3",
+      "appKeys": [
+        0,
+        1
+      ],
+      "cid": "0059",
+      "configComplete": false,
+      "crpl": "0028",
+      "deviceKey": "57eac0b82a1c4181b87046903c60bb41",
+      "elements": [
+        {
+          "index": 0,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "0000"
+            },
+            {
+              "modelId": "0002"
+            },
+            {
+              "bind": [
+                1
+              ],
+              "modelId": "1000",
+              "subscribe": [
+                49153
+              ]
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1000"
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        }
+      ],
+      "features": {
+        "friend": 2,
+        "lowPower": 2,
+        "proxy": 2,
+        "relay": 0
+      },
+      "name": "Light bulb #13.1",
+      "netKeys": [
+        0
+      ],
+      "pid": "0000",
+      "security": "low",
+      "unicastAddress": 72,
+      "vid": "0000"
+    },
+    {
+      "UUID": "0059ffff000000009f5b2cb9ae5f1709",
+      "appKeys": [
+        0,
+        1
+      ],
+      "cid": "0059",
+      "configComplete": false,
+      "crpl": "0028",
+      "deviceKey": "21457cbf6600eb8bce6e91bd8c79b020",
+      "elements": [
+        {
+          "index": 0,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "0000"
+            },
+            {
+              "modelId": "0002"
+            },
+            {
+              "bind": [
+                1
+              ],
+              "modelId": "1000",
+              "subscribe": [
+                49153
+              ]
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1000"
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        }
+      ],
+      "features": {
+        "friend": 2,
+        "lowPower": 2,
+        "proxy": 2,
+        "relay": 0
+      },
+      "name": "Light bulb #14.1",
+      "netKeys": [
+        0
+      ],
+      "pid": "0000",
+      "security": "low",
+      "unicastAddress": 75,
+      "vid": "0000"
+    },
+    {
+      "UUID": "0059ffff00000000fa1540bae7d603d1",
+      "appKeys": [
+        0,
+        1
+      ],
+      "cid": "0059",
+      "configComplete": false,
+      "crpl": "0028",
+      "deviceKey": "334ca5be4003dc42ba88d18b03adee93",
+      "elements": [
+        {
+          "index": 0,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "0000"
+            },
+            {
+              "modelId": "0002"
+            },
+            {
+              "bind": [
+                1
+              ],
+              "modelId": "1000",
+              "subscribe": [
+                49153
+              ]
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1000"
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        }
+      ],
+      "features": {
+        "friend": 2,
+        "lowPower": 2,
+        "proxy": 2,
+        "relay": 0
+      },
+      "name": "Light bulb #15.1",
+      "netKeys": [
+        0
+      ],
+      "pid": "0000",
+      "security": "low",
+      "unicastAddress": 78,
+      "vid": "0000"
+    },
+    {
+      "UUID": "0059ffff00000000e66f0409d1f45d38",
+      "appKeys": [
+        0,
+        1
+      ],
+      "cid": "0059",
+      "configComplete": false,
+      "crpl": "0028",
+      "deviceKey": "9db99adb4c367d5974ee18d6c3fb8c70",
+      "elements": [
+        {
+          "index": 0,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "0000"
+            },
+            {
+              "modelId": "0002"
+            },
+            {
+              "bind": [
+                0
+              ],
+              "modelId": "1000",
+              "subscribe": [
+                49153
+              ]
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1000"
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        }
+      ],
+      "features": {
+        "friend": 2,
+        "lowPower": 2,
+        "proxy": 2,
+        "relay": 0
+      },
+      "name": "Light bulb #9.0",
+      "netKeys": [
+        0
+      ],
+      "pid": "0000",
+      "security": "low",
+      "unicastAddress": 81,
+      "vid": "0000"
+    },
+    {
+      "UUID": "0059ffff00000000307f6ed05b63bb5f",
+      "appKeys": [
+        0,
+        1
+      ],
+      "cid": "0059",
+      "configComplete": false,
+      "crpl": "0028",
+      "deviceKey": "fa528939dbcd27808abad1c0c25b452a",
+      "elements": [
+        {
+          "index": 0,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "0000"
+            },
+            {
+              "modelId": "0002"
+            },
+            {
+              "bind": [
+                0
+              ],
+              "modelId": "1000",
+              "subscribe": [
+                49153
+              ]
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1000"
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        }
+      ],
+      "features": {
+        "friend": 2,
+        "lowPower": 2,
+        "proxy": 2,
+        "relay": 0
+      },
+      "name": "Light bulb #10.0",
+      "netKeys": [
+        0
+      ],
+      "pid": "0000",
+      "security": "low",
+      "unicastAddress": 84,
+      "vid": "0000"
+    },
+    {
+      "UUID": "0059ffff0000000076b6a73b08161439",
+      "appKeys": [
+        0,
+        1
+      ],
+      "cid": "0059",
+      "configComplete": false,
+      "crpl": "0028",
+      "deviceKey": "eac8a1bcc06522d8bc70f227a34e2b7c",
+      "elements": [
+        {
+          "index": 0,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "0000"
+            },
+            {
+              "modelId": "0002"
+            },
+            {
+              "bind": [
+                0
+              ],
+              "modelId": "1000",
+              "subscribe": [
+                49153
+              ]
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1000"
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        }
+      ],
+      "features": {
+        "friend": 2,
+        "lowPower": 2,
+        "proxy": 2,
+        "relay": 0
+      },
+      "name": "Light bulb #11.0",
+      "netKeys": [
+        0
+      ],
+      "pid": "0000",
+      "security": "low",
+      "unicastAddress": 87,
+      "vid": "0000"
+    },
+    {
+      "UUID": "0059ffff000000006d4ee21f783dee90",
+      "appKeys": [
+        0,
+        1
+      ],
+      "cid": "0059",
+      "configComplete": false,
+      "crpl": "0028",
+      "deviceKey": "50383b544439344d2db71297924f4ab5",
+      "elements": [
+        {
+          "index": 0,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "0000"
+            },
+            {
+              "modelId": "0002"
+            },
+            {
+              "bind": [
+                0
+              ],
+              "modelId": "1000",
+              "subscribe": [
+                49153
+              ]
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1000"
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        }
+      ],
+      "features": {
+        "friend": 2,
+        "lowPower": 2,
+        "proxy": 2,
+        "relay": 0
+      },
+      "name": "Light bulb #12.0",
+      "netKeys": [
+        0
+      ],
+      "pid": "0000",
+      "security": "low",
+      "unicastAddress": 90,
+      "vid": "0000"
+    },
+    {
+      "UUID": "0059ffff000000009e1f260ed9e2484a",
+      "appKeys": [
+        0,
+        1
+      ],
+      "cid": "0059",
+      "configComplete": false,
+      "crpl": "0028",
+      "deviceKey": "d200aecf7aaa79fe2c16e698001a9263",
+      "elements": [
+        {
+          "index": 0,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "0000"
+            },
+            {
+              "modelId": "0002"
+            },
+            {
+              "bind": [
+                0
+              ],
+              "modelId": "1000",
+              "subscribe": [
+                49153
+              ]
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1000"
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        }
+      ],
+      "features": {
+        "friend": 2,
+        "lowPower": 2,
+        "proxy": 2,
+        "relay": 0
+      },
+      "name": "Light bulb #13.0",
+      "netKeys": [
+        0
+      ],
+      "pid": "0000",
+      "security": "low",
+      "unicastAddress": 93,
+      "vid": "0000"
+    },
+    {
+      "UUID": "0059ffff000000004cb8dfaedbe33bec",
+      "appKeys": [
+        1,
+        0
+      ],
+      "cid": "0059",
+      "configComplete": false,
+      "crpl": "0028",
+      "deviceKey": "ddd9119e5aa6e13c14b7e6516a2a26fa",
+      "elements": [
+        {
+          "index": 0,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "0000"
+            },
+            {
+              "modelId": "0002"
+            },
+            {
+              "bind": [
+                0
+              ],
+              "modelId": "1000",
+              "subscribe": [
+                49153
+              ]
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1000"
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        }
+      ],
+      "features": {
+        "friend": 2,
+        "lowPower": 2,
+        "proxy": 2,
+        "relay": 0
+      },
+      "name": "Light bulb #14.0",
+      "netKeys": [
+        0
+      ],
+      "pid": "0000",
+      "security": "low",
+      "unicastAddress": 96,
+      "vid": "0000"
+    },
+    {
+      "UUID": "0059ffff00000000221d700e904f8efa",
+      "appKeys": [
+        0,
+        1
+      ],
+      "cid": "0059",
+      "configComplete": false,
+      "crpl": "0028",
+      "deviceKey": "ba47bd968ff9c295894dffb308e036a6",
+      "elements": [
+        {
+          "index": 0,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "0000"
+            },
+            {
+              "modelId": "0002"
+            },
+            {
+              "bind": [
+                0
+              ],
+              "modelId": "1000",
+              "subscribe": [
+                49153
+              ]
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1000"
+            },
+            {
+              "modelId": "1001"
+            }
+          ]
+        }
+      ],
+      "features": {
+        "friend": 2,
+        "lowPower": 2,
+        "proxy": 2,
+        "relay": 0
+      },
+      "name": "Light bulb #15.0",
+      "netKeys": [
+        0
+      ],
+      "pid": "0000",
+      "security": "low",
+      "unicastAddress": 99,
       "vid": "0000"
     }
   ],
@@ -284,5 +1939,5 @@
       "name": "BT Mesh Provisioner"
     }
   ],
-  "timestamp": "2018-10-31 21:58:09.773822"
+  "timestamp": "2018-11-08 04:03:51.961056"
 }
